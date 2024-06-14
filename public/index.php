@@ -17,14 +17,14 @@ require 'vendor/autoload.php';
  */
 (function () {
     /** @var \Psr\Container\ContainerInterface $container */
-    $container = require 'config/container.php';
+    $container = require 'config/container.php'; // get an instance of the configured ServiceManager
 
     //Debug::dump($container, '$container');
 
     /** @var \Mezzio\Application $app */
-    $app = $container->get(\App\Application::class);
+    $app = $container->get(\App\Application::class); // get a Factoried instance of the Application class
 
     //Debug::dump($app, '$app');
 
-    $app->run();
+    $app->run(); // run the Application
 })();

@@ -1,0 +1,3398 @@
+version: 1
+creator: xdebug 3.2.1 (PHP 8.2.0)
+cmd: C:\htdocs\mm-servicemanager\public\index.php
+part: 1
+positions: line
+
+events: Time_(10ns) Memory_(bytes)
+
+fl=(1) php:internal
+fn=(1) php::dirname
+12 420 64
+
+fl=(1)
+fn=(2) php::chdir
+12 9500 48
+
+fl=(2) C:\htdocs\mm-servicemanager\vendor\composer\autoload_real.php
+fn=(3) require_once::C:\htdocs\mm-servicemanager\vendor\composer\autoload_real.php
+1 80 0
+
+fl=(3) C:\htdocs\mm-servicemanager\vendor\composer\platform_check.php
+fn=(4) require::C:\htdocs\mm-servicemanager\vendor\composer\platform_check.php
+1 190 0
+
+fl=(1)
+fn=(5) php::spl_autoload_register
+27 370 408
+
+fl=(4) C:\htdocs\mm-servicemanager\vendor\composer\ClassLoader.php
+fn=(6) require::C:\htdocs\mm-servicemanager\vendor\composer\ClassLoader.php
+1 100 0
+
+fl=(2)
+fn=(7) ComposerAutoloaderInited5dd6f8c1ed56fa48e78dd108ecbce6::loadClassLoader
+9 710 376
+cfl=(4)
+cfn=(6)
+calls=1 0 0
+12 100 0
+
+fl=(1)
+fn=(1)
+28 170 80
+
+fl=(4)
+fn=(8) Composer\Autoload\ClassLoader->__construct
+106 180 0
+
+fl=(1)
+fn=(9) php::spl_autoload_unregister
+29 160 0
+
+fl=(5) C:\htdocs\mm-servicemanager\vendor\composer\autoload_static.php
+fn=(10) require::C:\htdocs\mm-servicemanager\vendor\composer\autoload_static.php
+1 50 0
+
+fl=(1)
+fn=(11) php::Closure::bind
+90 130 920
+
+fl=(5)
+fn=(12) Composer\Autoload\ComposerStaticInited5dd6f8c1ed56fa48e78dd108ecbce6::getInitializer
+88 730 0
+cfl=(1)
+cfn=(11)
+calls=1 0 0
+90 130 920
+
+fl=(5)
+fn=(13) Composer\Autoload\ClassLoader::Composer\Autoload\{closure:C:\htdocs\mm-servicemanager\vendor\composer\autoload_static.php:90-95}
+90 280 0
+
+fl=(1)
+fn=(5)
+391 100 32
+
+fl=(4)
+fn=(14) Composer\Autoload\ClassLoader->register
+389 830 392
+cfl=(1)
+cfn=(5)
+calls=1 0 0
+391 100 32
+
+fl=(1)
+fn=(15) php::interface_exists
+13 120 0
+
+fl=(1)
+fn=(16) php::strtr
+496 90 64
+
+fl=(1)
+fn=(17) php::strrpos
+501 30 0
+
+fl=(1)
+fn=(18) php::substr
+502 50 40
+
+fl=(1)
+fn=(18)
+505 30 48
+
+fl=(1)
+fn=(19) php::file_exists
+507 8040 0
+
+fl=(4)
+fn=(20) Composer\Autoload\ClassLoader->findFileWithExtension
+493 2180 0
+cfl=(1)
+cfn=(16)
+calls=1 0 0
+496 90 64
+cfl=(1)
+cfn=(17)
+calls=1 0 0
+501 30 0
+cfl=(1)
+cfn=(18)
+calls=1 0 0
+502 50 40
+cfl=(1)
+cfn=(18)
+calls=1 0 0
+505 30 48
+cfl=(1)
+cfn=(19)
+calls=1 0 0
+507 8040 0
+
+fl=(4)
+fn=(21) Composer\Autoload\ClassLoader->findFile
+443 960 0
+cfl=(4)
+cfn=(20)
+calls=1 0 0
+459 10420 112
+
+fl=(6) C:\htdocs\mm-servicemanager\vendor\psr\container\src\ContainerInterface.php
+fn=(22) include::C:\htdocs\mm-servicemanager\vendor\psr\container\src\ContainerInterface.php
+1 50 0
+
+fl=(4)
+fn=(23) Composer\Autoload\includeFile
+569 990 376
+cfl=(6)
+cfn=(22)
+calls=1 0 0
+571 50 0
+
+fl=(4)
+fn=(24) Composer\Autoload\ClassLoader->loadClass
+425 960 0
+cfl=(4)
+cfn=(21)
+calls=1 0 0
+427 11380 112
+cfl=(4)
+cfn=(23)
+calls=1 0 0
+428 1040 376
+
+fl=(1)
+fn=(25) php::class_alias
+14 750 64
+cfl=(4)
+cfn=(24)
+calls=1 0 0
+14 13380 376
+
+fl=(1)
+fn=(15)
+16 60 0
+
+fl=(1)
+fn=(16)
+496 50 80
+
+fl=(1)
+fn=(17)
+501 20 0
+
+fl=(1)
+fn=(18)
+502 20 40
+
+fl=(1)
+fn=(18)
+505 20 56
+
+fl=(1)
+fn=(19)
+507 6010 0
+
+fl=(4)
+fn=(20)
+493 1290 0
+cfl=(1)
+cfn=(16)
+calls=1 0 0
+496 50 80
+cfl=(1)
+cfn=(17)
+calls=1 0 0
+501 20 0
+cfl=(1)
+cfn=(18)
+calls=1 0 0
+502 20 40
+cfl=(1)
+cfn=(18)
+calls=1 0 0
+505 20 56
+cfl=(1)
+cfn=(19)
+calls=1 0 0
+507 6010 0
+
+fl=(4)
+fn=(21)
+443 650 0
+cfl=(4)
+cfn=(20)
+calls=1 0 0
+459 7410 128
+
+fl=(7) C:\htdocs\mm-servicemanager\vendor\psr\container\src\ContainerExceptionInterface.php
+fn=(26) include::C:\htdocs\mm-servicemanager\vendor\psr\container\src\ContainerExceptionInterface.php
+1 560 336
+
+fl=(4)
+fn=(23)
+569 740 320
+cfl=(7)
+cfn=(26)
+calls=1 0 0
+571 560 336
+
+fl=(4)
+fn=(24)
+425 740 0
+cfl=(4)
+cfn=(21)
+calls=1 0 0
+427 8060 128
+cfl=(4)
+cfn=(23)
+calls=1 0 0
+428 1300 656
+
+fl=(1)
+fn=(25)
+17 590 80
+cfl=(4)
+cfn=(24)
+calls=1 0 0
+17 10100 656
+
+fl=(1)
+fn=(15)
+19 60 0
+
+fl=(1)
+fn=(16)
+496 40 80
+
+fl=(1)
+fn=(17)
+501 30 0
+
+fl=(1)
+fn=(18)
+502 30 40
+
+fl=(1)
+fn=(18)
+505 20 56
+
+fl=(1)
+fn=(19)
+507 5390 0
+
+fl=(4)
+fn=(20)
+493 1140 0
+cfl=(1)
+cfn=(16)
+calls=1 0 0
+496 40 80
+cfl=(1)
+cfn=(17)
+calls=1 0 0
+501 30 0
+cfl=(1)
+cfn=(18)
+calls=1 0 0
+502 30 40
+cfl=(1)
+cfn=(18)
+calls=1 0 0
+505 20 56
+cfl=(1)
+cfn=(19)
+calls=1 0 0
+507 5390 0
+
+fl=(4)
+fn=(21)
+443 630 0
+cfl=(4)
+cfn=(20)
+calls=1 0 0
+459 6650 128
+
+fl=(8) C:\htdocs\mm-servicemanager\vendor\psr\container\src\NotFoundExceptionInterface.php
+fn=(27) include::C:\htdocs\mm-servicemanager\vendor\psr\container\src\NotFoundExceptionInterface.php
+1 170 344
+
+fl=(4)
+fn=(23)
+569 7970 0
+cfl=(8)
+cfn=(27)
+calls=1 0 0
+571 170 344
+
+fl=(4)
+fn=(24)
+425 850 0
+cfl=(4)
+cfn=(21)
+calls=1 0 0
+427 7280 128
+cfl=(4)
+cfn=(23)
+calls=1 0 0
+428 8140 344
+
+fl=(1)
+fn=(25)
+20 1040 80
+cfl=(4)
+cfn=(24)
+calls=1 0 0
+20 16270 344
+
+fl=(9) C:\htdocs\mm-servicemanager\vendor\laminas\laminas-servicemanager\src\autoload.php
+fn=(28) require::C:\htdocs\mm-servicemanager\vendor\laminas\laminas-servicemanager\src\autoload.php
+1 1930 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+13 120 0
+cfl=(1)
+cfn=(25)
+calls=1 0 0
+14 14130 440
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+16 60 0
+cfl=(1)
+cfn=(25)
+calls=1 0 0
+17 10690 736
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+19 60 0
+cfl=(1)
+cfn=(25)
+calls=1 0 0
+20 17310 424
+
+fl=(2)
+fn=(29) composerRequireed5dd6f8c1ed56fa48e78dd108ecbce6
+50 1060 376
+cfl=(9)
+cfn=(28)
+calls=1 0 0
+55 44300 1600
+
+fl=(2)
+fn=(30) ComposerAutoloaderInited5dd6f8c1ed56fa48e78dd108ecbce6::getLoader
+19 6560 992
+cfl=(3)
+cfn=(4)
+calls=1 0 0
+25 190 0
+cfl=(1)
+cfn=(5)
+calls=1 0 0
+27 370 408
+cfl=(2)
+cfn=(7)
+calls=1 0 0
+28 810 376
+cfl=(1)
+cfn=(1)
+calls=1 0 0
+28 170 80
+cfl=(4)
+cfn=(8)
+calls=1 0 0
+28 180 0
+cfl=(1)
+cfn=(9)
+calls=1 0 0
+29 160 0
+cfl=(5)
+cfn=(10)
+calls=1 0 0
+31 50 0
+cfl=(5)
+cfn=(12)
+calls=1 0 0
+32 860 920
+cfl=(5)
+cfn=(13)
+calls=1 0 0
+32 280 0
+cfl=(4)
+cfn=(14)
+calls=1 0 0
+34 930 424
+cfl=(2)
+cfn=(29)
+calls=1 0 0
+38 45360 1976
+
+fl=(10) C:\htdocs\mm-servicemanager\vendor\autoload.php
+fn=(31) require::C:\htdocs\mm-servicemanager\vendor\autoload.php
+1 3040 0
+cfl=(2)
+cfn=(3)
+calls=1 0 0
+10 80 0
+cfl=(2)
+cfn=(30)
+calls=1 0 0
+12 55920 4288
+
+fl=(1)
+fn=(16)
+496 50 80
+
+fl=(1)
+fn=(17)
+501 30 0
+
+fl=(1)
+fn=(18)
+502 20 56
+
+fl=(1)
+fn=(18)
+505 30 48
+
+fl=(1)
+fn=(19)
+507 5670 0
+
+fl=(4)
+fn=(20)
+493 1330 0
+cfl=(1)
+cfn=(16)
+calls=1 0 0
+496 50 80
+cfl=(1)
+cfn=(17)
+calls=1 0 0
+501 30 0
+cfl=(1)
+cfn=(18)
+calls=1 0 0
+502 20 56
+cfl=(1)
+cfn=(18)
+calls=1 0 0
+505 30 48
+cfl=(1)
+cfn=(19)
+calls=1 0 0
+507 5670 0
+
+fl=(4)
+fn=(21)
+443 510 0
+cfl=(4)
+cfn=(20)
+calls=1 0 0
+459 7130 160
+
+fl=(11) C:\htdocs\mm-servicemanager\vendor\laminas\laminas-config-aggregator\src\ConfigAggregator.php
+fn=(32) include::C:\htdocs\mm-servicemanager\vendor\laminas\laminas-config-aggregator\src\ConfigAggregator.php
+1 30 0
+
+fl=(4)
+fn=(23)
+569 540 0
+cfl=(11)
+cfn=(32)
+calls=1 0 0
+571 30 0
+
+fl=(4)
+fn=(24)
+425 560 0
+cfl=(4)
+cfn=(21)
+calls=1 0 0
+427 7640 160
+cfl=(4)
+cfn=(23)
+calls=1 0 0
+428 570 0
+
+fl=(1)
+fn=(16)
+496 30 64
+
+fl=(1)
+fn=(17)
+501 20 0
+
+fl=(1)
+fn=(18)
+502 310 56
+
+fl=(1)
+fn=(18)
+505 10 48
+
+fl=(1)
+fn=(19)
+507 3470 0
+
+fl=(4)
+fn=(20)
+493 710 0
+cfl=(1)
+cfn=(16)
+calls=1 0 0
+496 30 64
+cfl=(1)
+cfn=(17)
+calls=1 0 0
+501 20 0
+cfl=(1)
+cfn=(18)
+calls=1 0 0
+502 310 56
+cfl=(1)
+cfn=(18)
+calls=1 0 0
+505 10 48
+cfl=(1)
+cfn=(19)
+calls=1 0 0
+507 3470 0
+
+fl=(4)
+fn=(21)
+443 370 0
+cfl=(4)
+cfn=(20)
+calls=1 0 0
+459 4550 128
+
+fl=(12) C:\htdocs\mm-servicemanager\vendor\laminas\laminas-config-aggregator\src\ArrayProvider.php
+fn=(33) include::C:\htdocs\mm-servicemanager\vendor\laminas\laminas-config-aggregator\src\ArrayProvider.php
+1 20 0
+
+fl=(4)
+fn=(23)
+569 450 0
+cfl=(12)
+cfn=(33)
+calls=1 0 0
+571 20 0
+
+fl=(4)
+fn=(24)
+425 460 0
+cfl=(4)
+cfn=(21)
+calls=1 0 0
+427 4920 128
+cfl=(4)
+cfn=(23)
+calls=1 0 0
+428 470 0
+
+fl=(12)
+fn=(34) Laminas\ConfigAggregator\ArrayProvider->__construct
+20 100 0
+
+fl=(1)
+fn=(16)
+496 20 80
+
+fl=(1)
+fn=(17)
+501 10 0
+
+fl=(1)
+fn=(18)
+502 20 56
+
+fl=(1)
+fn=(18)
+505 10 48
+
+fl=(1)
+fn=(19)
+507 3290 0
+
+fl=(4)
+fn=(20)
+493 680 0
+cfl=(1)
+cfn=(16)
+calls=1 0 0
+496 20 80
+cfl=(1)
+cfn=(17)
+calls=1 0 0
+501 10 0
+cfl=(1)
+cfn=(18)
+calls=1 0 0
+502 20 56
+cfl=(1)
+cfn=(18)
+calls=1 0 0
+505 10 48
+cfl=(1)
+cfn=(19)
+calls=1 0 0
+507 3290 0
+
+fl=(4)
+fn=(21)
+443 340 0
+cfl=(4)
+cfn=(20)
+calls=1 0 0
+459 4030 160
+
+fl=(1)
+fn=(16)
+496 30 64
+
+fl=(1)
+fn=(17)
+501 10 0
+
+fl=(1)
+fn=(18)
+502 10 56
+
+fl=(1)
+fn=(18)
+505 20 40
+
+fl=(1)
+fn=(19)
+507 3110 0
+
+fl=(4)
+fn=(20)
+493 660 0
+cfl=(1)
+cfn=(16)
+calls=1 0 0
+496 30 64
+cfl=(1)
+cfn=(17)
+calls=1 0 0
+501 10 0
+cfl=(1)
+cfn=(18)
+calls=1 0 0
+502 10 56
+cfl=(1)
+cfn=(18)
+calls=1 0 0
+505 20 40
+cfl=(1)
+cfn=(19)
+calls=1 0 0
+507 3110 0
+
+fl=(4)
+fn=(21)
+443 1620 0
+cfl=(4)
+cfn=(20)
+calls=1 0 0
+459 3840 128
+
+fl=(13) C:\htdocs\mm-servicemanager\vendor\laminas\laminas-config-aggregator\src\GlobTrait.php
+fn=(35) include::C:\htdocs\mm-servicemanager\vendor\laminas\laminas-config-aggregator\src\GlobTrait.php
+1 30 0
+
+fl=(4)
+fn=(23)
+569 450 0
+cfl=(13)
+cfn=(35)
+calls=1 0 0
+571 30 0
+
+fl=(4)
+fn=(24)
+425 460 0
+cfl=(4)
+cfn=(21)
+calls=1 0 0
+427 5460 128
+cfl=(4)
+cfn=(23)
+calls=1 0 0
+428 480 0
+
+fl=(14) C:\htdocs\mm-servicemanager\vendor\laminas\laminas-config-aggregator\src\PhpFileProvider.php
+fn=(36) include::C:\htdocs\mm-servicemanager\vendor\laminas\laminas-config-aggregator\src\PhpFileProvider.php
+1 380 0
+cfl=(4)
+cfn=(24)
+calls=1 0 0
+12 6400 0
+
+fl=(4)
+fn=(23)
+569 470 0
+cfl=(14)
+cfn=(36)
+calls=1 0 0
+571 6780 0
+
+fl=(4)
+fn=(24)
+425 440 0
+cfl=(4)
+cfn=(21)
+calls=1 0 0
+427 4370 160
+cfl=(4)
+cfn=(23)
+calls=1 0 0
+428 7250 0
+
+fl=(1)
+fn=(37) php::realpath
+30 3650 64
+
+fl=(14)
+fn=(38) Laminas\ConfigAggregator\PhpFileProvider->__construct
+19 70 0
+
+fl=(1)
+fn=(37)
+33 2620 64
+
+fl=(14)
+fn=(38)
+19 40 0
+
+fl=(1)
+fn=(19)
+256 6380 0
+
+fl=(11)
+fn=(39) Laminas\ConfigAggregator\ConfigAggregator->loadConfigFromCache
+250 300 0
+cfl=(1)
+cfn=(19)
+calls=1 0 0
+256 6380 0
+
+fl=(11)
+fn=(40) Laminas\ConfigAggregator\ConfigAggregator->preProcessProviders
+300 80 0
+
+fl=(1)
+fn=(16)
+496 30 56
+
+fl=(1)
+fn=(17)
+501 10 0
+
+fl=(1)
+fn=(18)
+502 20 48
+
+fl=(1)
+fn=(18)
+505 10 48
+
+fl=(1)
+fn=(19)
+507 3700 0
+
+fl=(4)
+fn=(20)
+493 730 0
+cfl=(1)
+cfn=(16)
+calls=1 0 0
+496 30 56
+cfl=(1)
+cfn=(17)
+calls=1 0 0
+501 10 0
+cfl=(1)
+cfn=(18)
+calls=1 0 0
+502 20 48
+cfl=(1)
+cfn=(18)
+calls=1 0 0
+505 10 48
+cfl=(1)
+cfn=(19)
+calls=1 0 0
+507 3700 0
+
+fl=(4)
+fn=(21)
+443 370 0
+cfl=(4)
+cfn=(20)
+calls=1 0 0
+459 4500 128
+
+fl=(15) C:\htdocs\mm-servicemanager\vendor\webinertia\webinertia-utils\src\ConfigProvider.php
+fn=(41) include::C:\htdocs\mm-servicemanager\vendor\webinertia\webinertia-utils\src\ConfigProvider.php
+1 30 0
+
+fl=(4)
+fn=(23)
+569 490 640
+cfl=(15)
+cfn=(41)
+calls=1 0 0
+571 30 0
+
+fl=(4)
+fn=(24)
+425 470 0
+cfl=(4)
+cfn=(21)
+calls=1 0 0
+427 4870 128
+cfl=(4)
+cfn=(23)
+calls=1 0 0
+428 520 640
+
+fl=(1)
+fn=(42) php::class_exists
+112 350 0
+cfl=(4)
+cfn=(24)
+calls=1 0 0
+112 5860 640
+
+fl=(1)
+fn=(43) php::is_callable
+118 90 0
+
+fl=(11)
+fn=(44) Laminas\ConfigAggregator\ConfigAggregator->resolveProvider
+109 610 40
+cfl=(1)
+cfn=(42)
+calls=1 0 0
+112 6210 640
+cfl=(1)
+cfn=(43)
+calls=1 0 0
+118 90 0
+
+fl=(15)
+fn=(45) Webinertia\Utils\ConfigProvider->getDependencyConfig
+22 20 0
+
+fl=(15)
+fn=(46) Webinertia\Utils\ConfigProvider->__invoke
+12 300 376
+cfl=(15)
+cfn=(45)
+calls=1 0 0
+15 20 0
+
+fl=(11)
+fn=(47) Laminas\ConfigAggregator\ConfigAggregator->mergeArray
+173 230 376
+
+fl=(11)
+fn=(48) Laminas\ConfigAggregator\ConfigAggregator->mergeConfig
+207 330 0
+cfl=(11)
+cfn=(47)
+calls=1 0 0
+218 230 376
+
+fl=(1)
+fn=(43)
+118 20 0
+
+fl=(11)
+fn=(44)
+109 160 0
+cfl=(1)
+cfn=(43)
+calls=1 0 0
+118 20 0
+
+fl=(12)
+fn=(49) Laminas\ConfigAggregator\ArrayProvider->__invoke
+27 30 0
+
+fl=(11)
+fn=(47)
+173 140 376
+
+fl=(11)
+fn=(48)
+207 230 0
+cfl=(11)
+cfn=(47)
+calls=1 0 0
+218 140 376
+
+fl=(1)
+fn=(16)
+496 30 48
+
+fl=(1)
+fn=(17)
+501 20 0
+
+fl=(1)
+fn=(18)
+502 10 32
+
+fl=(1)
+fn=(18)
+505 10 48
+
+fl=(1)
+fn=(19)
+507 3710 0
+
+fl=(4)
+fn=(20)
+493 710 0
+cfl=(1)
+cfn=(16)
+calls=1 0 0
+496 30 48
+cfl=(1)
+cfn=(17)
+calls=1 0 0
+501 20 0
+cfl=(1)
+cfn=(18)
+calls=1 0 0
+502 10 32
+cfl=(1)
+cfn=(18)
+calls=1 0 0
+505 10 48
+cfl=(1)
+cfn=(19)
+calls=1 0 0
+507 3710 0
+
+fl=(4)
+fn=(21)
+443 360 0
+cfl=(4)
+cfn=(20)
+calls=1 0 0
+459 4490 112
+
+fl=(16) C:\htdocs\mm-servicemanager\src\App\src\ConfigProvider.php
+fn=(50) include::C:\htdocs\mm-servicemanager\src\App\src\ConfigProvider.php
+1 30 0
+
+fl=(4)
+fn=(23)
+569 380 0
+cfl=(16)
+cfn=(50)
+calls=1 0 0
+571 30 0
+
+fl=(4)
+fn=(24)
+425 440 0
+cfl=(4)
+cfn=(21)
+calls=1 0 0
+427 4850 112
+cfl=(4)
+cfn=(23)
+calls=1 0 0
+428 410 0
+
+fl=(1)
+fn=(42)
+112 310 0
+cfl=(4)
+cfn=(24)
+calls=1 0 0
+112 5700 0
+
+fl=(1)
+fn=(43)
+118 20 0
+
+fl=(11)
+fn=(44)
+109 330 40
+cfl=(1)
+cfn=(42)
+calls=1 0 0
+112 6010 0
+cfl=(1)
+cfn=(43)
+calls=1 0 0
+118 20 0
+
+fl=(16)
+fn=(51) App\ConfigProvider->getDependencies
+16 30 0
+
+fl=(16)
+fn=(52) App\ConfigProvider->__invoke
+9 240 376
+cfl=(16)
+cfn=(51)
+calls=1 0 0
+12 30 0
+
+fl=(11)
+fn=(47)
+173 30 0
+
+fl=(11)
+fn=(47)
+173 130 376
+
+fl=(11)
+fn=(47)
+173 520 376
+cfl=(11)
+cfn=(47)
+calls=1 0 0
+184 30 0
+cfl=(11)
+cfn=(47)
+calls=1 0 0
+184 130 376
+
+fl=(11)
+fn=(47)
+173 390 376
+cfl=(11)
+cfn=(47)
+calls=1 0 0
+184 680 752
+
+fl=(11)
+fn=(48)
+207 300 0
+cfl=(11)
+cfn=(47)
+calls=1 0 0
+218 1070 1128
+
+fl=(1)
+fn=(43)
+118 10 0
+
+fl=(11)
+fn=(44)
+109 140 0
+cfl=(1)
+cfn=(43)
+calls=1 0 0
+118 10 0
+
+fl=(14)
+fn=(53) Laminas\ConfigAggregator\PhpFileProvider->__invoke
+26 80 448
+
+fl=(1)
+fn=(16)
+496 20 48
+
+fl=(1)
+fn=(17)
+501 20 0
+
+fl=(1)
+fn=(18)
+502 10 40
+
+fl=(1)
+fn=(18)
+505 10 40
+
+fl=(1)
+fn=(19)
+507 3540 0
+
+fl=(4)
+fn=(20)
+493 1060 0
+cfl=(1)
+cfn=(16)
+calls=1 0 0
+496 20 48
+cfl=(1)
+cfn=(17)
+calls=1 0 0
+501 20 0
+cfl=(1)
+cfn=(18)
+calls=1 0 0
+502 10 40
+cfl=(1)
+cfn=(18)
+calls=1 0 0
+505 10 40
+cfl=(1)
+cfn=(19)
+calls=1 0 0
+507 3540 0
+
+fl=(4)
+fn=(21)
+443 370 0
+cfl=(4)
+cfn=(20)
+calls=1 0 0
+459 4660 112
+
+fl=(17) C:\htdocs\mm-servicemanager\vendor\laminas\laminas-stdlib\src\Glob.php
+fn=(54) include::C:\htdocs\mm-servicemanager\vendor\laminas\laminas-stdlib\src\Glob.php
+1 30 0
+
+fl=(4)
+fn=(23)
+569 470 0
+cfl=(17)
+cfn=(54)
+calls=1 0 0
+571 30 0
+
+fl=(4)
+fn=(24)
+425 420 0
+cfl=(4)
+cfn=(21)
+calls=1 0 0
+427 5030 112
+cfl=(4)
+cfn=(23)
+calls=1 0 0
+428 500 0
+
+fl=(17)
+fn=(55) Laminas\Stdlib\Glob::flagsIsEqualTo
+222 60 0
+
+fl=(17)
+fn=(55)
+222 30 0
+
+fl=(17)
+fn=(55)
+222 20 0
+
+fl=(17)
+fn=(55)
+222 10 0
+
+fl=(17)
+fn=(55)
+222 20 0
+
+fl=(17)
+fn=(55)
+222 10 0
+
+fl=(17)
+fn=(55)
+222 20 0
+
+fl=(17)
+fn=(55)
+222 20 0
+
+fl=(17)
+fn=(55)
+222 20 0
+
+fl=(17)
+fn=(55)
+222 10 0
+
+fl=(17)
+fn=(55)
+222 10 0
+
+fl=(17)
+fn=(55)
+222 10 0
+
+fl=(17)
+fn=(55)
+222 10 0
+
+fl=(17)
+fn=(56) Laminas\Stdlib\Glob::nextBraceSub
+191 2120 0
+cfl=(17)
+cfn=(55)
+calls=1 0 0
+198 30 0
+cfl=(17)
+cfn=(55)
+calls=1 0 0
+198 20 0
+cfl=(17)
+cfn=(55)
+calls=1 0 0
+198 10 0
+cfl=(17)
+cfn=(55)
+calls=1 0 0
+198 20 0
+cfl=(17)
+cfn=(55)
+calls=1 0 0
+198 10 0
+cfl=(17)
+cfn=(55)
+calls=1 0 0
+198 20 0
+cfl=(17)
+cfn=(55)
+calls=1 0 0
+198 20 0
+cfl=(17)
+cfn=(55)
+calls=1 0 0
+198 20 0
+cfl=(17)
+cfn=(55)
+calls=1 0 0
+198 10 0
+cfl=(17)
+cfn=(55)
+calls=1 0 0
+198 10 0
+cfl=(17)
+cfn=(55)
+calls=1 0 0
+198 10 0
+cfl=(17)
+cfn=(55)
+calls=1 0 0
+198 10 0
+
+fl=(17)
+fn=(55)
+222 20 0
+
+fl=(17)
+fn=(55)
+222 10 0
+
+fl=(17)
+fn=(55)
+222 10 0
+
+fl=(17)
+fn=(55)
+222 10 0
+
+fl=(17)
+fn=(55)
+222 10 0
+
+fl=(17)
+fn=(55)
+222 10 0
+
+fl=(17)
+fn=(55)
+222 20 0
+
+fl=(17)
+fn=(55)
+222 10 0
+
+fl=(17)
+fn=(55)
+222 20 0
+
+fl=(17)
+fn=(55)
+222 10 0
+
+fl=(17)
+fn=(55)
+222 20 0
+
+fl=(17)
+fn=(56)
+191 2050 0
+cfl=(17)
+cfn=(55)
+calls=1 0 0
+198 20 0
+cfl=(17)
+cfn=(55)
+calls=1 0 0
+198 10 0
+cfl=(17)
+cfn=(55)
+calls=1 0 0
+198 10 0
+cfl=(17)
+cfn=(55)
+calls=1 0 0
+198 10 0
+cfl=(17)
+cfn=(55)
+calls=1 0 0
+198 10 0
+cfl=(17)
+cfn=(55)
+calls=1 0 0
+198 10 0
+cfl=(17)
+cfn=(55)
+calls=1 0 0
+198 20 0
+cfl=(17)
+cfn=(55)
+calls=1 0 0
+198 10 0
+cfl=(17)
+cfn=(55)
+calls=1 0 0
+198 20 0
+cfl=(17)
+cfn=(55)
+calls=1 0 0
+198 10 0
+cfl=(17)
+cfn=(55)
+calls=1 0 0
+198 20 0
+
+fl=(1)
+fn=(18)
+162 20 80
+
+fl=(1)
+fn=(18)
+163 10 40
+
+fl=(1)
+fn=(18)
+164 10 32
+
+fl=(17)
+fn=(55)
+222 20 0
+
+fl=(17)
+fn=(55)
+222 20 0
+
+fl=(17)
+fn=(56)
+191 190 0
+cfl=(17)
+cfn=(55)
+calls=1 0 0
+198 20 0
+
+fl=(17)
+fn=(55)
+222 20 0
+
+fl=(17)
+fn=(55)
+222 40 0
+
+fl=(17)
+fn=(55)
+222 20 0
+
+fl=(17)
+fn=(56)
+191 1330 0
+cfl=(17)
+cfn=(55)
+calls=1 0 0
+198 20 0
+cfl=(17)
+cfn=(55)
+calls=1 0 0
+198 40 0
+cfl=(17)
+cfn=(55)
+calls=1 0 0
+198 20 0
+
+fl=(1)
+fn=(18)
+162 20 80
+
+fl=(1)
+fn=(18)
+163 10 0
+
+fl=(1)
+fn=(18)
+164 20 40
+
+fl=(17)
+fn=(55)
+222 20 0
+
+fl=(1)
+fn=(16)
+496 20 56
+
+fl=(1)
+fn=(17)
+501 10 0
+
+fl=(1)
+fn=(18)
+502 10 40
+
+fl=(1)
+fn=(18)
+505 10 48
+
+fl=(1)
+fn=(19)
+507 3800 0
+
+fl=(4)
+fn=(20)
+493 710 0
+cfl=(1)
+cfn=(16)
+calls=1 0 0
+496 20 56
+cfl=(1)
+cfn=(17)
+calls=1 0 0
+501 10 0
+cfl=(1)
+cfn=(18)
+calls=1 0 0
+502 10 40
+cfl=(1)
+cfn=(18)
+calls=1 0 0
+505 10 48
+cfl=(1)
+cfn=(19)
+calls=1 0 0
+507 3800 0
+
+fl=(4)
+fn=(21)
+443 370 0
+cfl=(4)
+cfn=(20)
+calls=1 0 0
+459 4560 128
+
+fl=(18) C:\htdocs\mm-servicemanager\vendor\laminas\laminas-stdlib\src\ErrorHandler.php
+fn=(57) include::C:\htdocs\mm-servicemanager\vendor\laminas\laminas-stdlib\src\ErrorHandler.php
+1 30 0
+
+fl=(4)
+fn=(23)
+569 480 0
+cfl=(18)
+cfn=(57)
+calls=1 0 0
+571 30 0
+
+fl=(4)
+fn=(24)
+425 3980 0
+cfl=(4)
+cfn=(21)
+calls=1 0 0
+427 4930 128
+cfl=(4)
+cfn=(23)
+calls=1 0 0
+428 510 0
+
+fl=(1)
+fn=(58) php::set_error_handler
+59 140 320
+
+fl=(18)
+fn=(59) Laminas\Stdlib\ErrorHandler::start
+56 580 448
+cfl=(1)
+cfn=(58)
+calls=1 0 0
+59 140 320
+
+fl=(1)
+fn=(60) php::glob
+94 5870 56
+
+fl=(1)
+fn=(61) php::array_pop
+77 110 0
+
+fl=(1)
+fn=(62) php::restore_error_handler
+80 60 0
+
+fl=(18)
+fn=(63) Laminas\Stdlib\ErrorHandler::stop
+72 600 32
+cfl=(1)
+cfn=(61)
+calls=1 0 0
+77 110 0
+cfl=(1)
+cfn=(62)
+calls=1 0 0
+80 60 0
+
+fl=(17)
+fn=(64) Laminas\Stdlib\Glob::systemGlob
+69 1680 0
+cfl=(4)
+cfn=(24)
+calls=1 0 0
+93 9420 0
+cfl=(18)
+cfn=(59)
+calls=1 0 0
+93 720 768
+cfl=(1)
+cfn=(60)
+calls=1 0 0
+94 5870 56
+cfl=(18)
+cfn=(63)
+calls=1 0 0
+95 770 0
+
+fl=(17)
+fn=(65) Laminas\Stdlib\Glob::fallbackGlob
+110 1420 0
+cfl=(17)
+cfn=(55)
+calls=1 0 0
+112 20 0
+cfl=(17)
+cfn=(64)
+calls=1 0 0
+140 18460 640
+
+fl=(17)
+fn=(55)
+222 30 0
+
+fl=(17)
+fn=(55)
+222 20 0
+
+fl=(17)
+fn=(55)
+222 20 0
+
+fl=(17)
+fn=(56)
+191 570 0
+cfl=(17)
+cfn=(55)
+calls=1 0 0
+198 30 0
+cfl=(17)
+cfn=(55)
+calls=1 0 0
+198 20 0
+cfl=(17)
+cfn=(55)
+calls=1 0 0
+198 20 0
+
+fl=(1)
+fn=(18)
+162 20 80
+
+fl=(1)
+fn=(18)
+163 10 32
+
+fl=(1)
+fn=(18)
+164 10 40
+
+fl=(17)
+fn=(55)
+222 20 0
+
+fl=(1)
+fn=(58)
+59 70 0
+
+fl=(18)
+fn=(59)
+56 200 216
+cfl=(1)
+cfn=(58)
+calls=1 0 0
+59 70 0
+
+fl=(1)
+fn=(60)
+94 9200 56
+
+fl=(1)
+fn=(61)
+77 20 0
+
+fl=(1)
+fn=(62)
+80 30 0
+
+fl=(18)
+fn=(63)
+72 360 0
+cfl=(1)
+cfn=(61)
+calls=1 0 0
+77 20 0
+cfl=(1)
+cfn=(62)
+calls=1 0 0
+80 30 0
+
+fl=(17)
+fn=(64)
+69 850 0
+cfl=(18)
+cfn=(59)
+calls=1 0 0
+93 270 216
+cfl=(1)
+cfn=(60)
+calls=1 0 0
+94 9200 56
+cfl=(18)
+cfn=(63)
+calls=1 0 0
+95 410 0
+
+fl=(17)
+fn=(65)
+110 1340 0
+cfl=(17)
+cfn=(55)
+calls=1 0 0
+112 20 0
+cfl=(17)
+cfn=(64)
+calls=1 0 0
+140 10730 56
+
+fl=(1)
+fn=(66) php::array_unique
+180 40 0
+
+fl=(17)
+fn=(65)
+110 3260 0
+cfl=(17)
+cfn=(55)
+calls=1 0 0
+112 20 0
+cfl=(17)
+cfn=(56)
+calls=1 0 0
+143 210 0
+cfl=(17)
+cfn=(56)
+calls=1 0 0
+152 1410 0
+cfl=(1)
+cfn=(18)
+calls=1 0 0
+162 20 80
+cfl=(1)
+cfn=(18)
+calls=1 0 0
+163 10 0
+cfl=(1)
+cfn=(18)
+calls=1 0 0
+164 20 40
+cfl=(17)
+cfn=(65)
+calls=1 0 0
+166 19900 640
+cfl=(17)
+cfn=(56)
+calls=1 0 0
+177 640 0
+cfl=(1)
+cfn=(18)
+calls=1 0 0
+162 20 80
+cfl=(1)
+cfn=(18)
+calls=1 0 0
+163 10 32
+cfl=(1)
+cfn=(18)
+calls=1 0 0
+164 10 40
+cfl=(17)
+cfn=(65)
+calls=1 0 0
+166 12090 56
+cfl=(1)
+cfn=(66)
+calls=1 0 0
+180 40 0
+
+fl=(17)
+fn=(55)
+222 30 0
+
+fl=(17)
+fn=(55)
+222 20 0
+
+fl=(17)
+fn=(55)
+222 20 0
+
+fl=(17)
+fn=(55)
+222 20 0
+
+fl=(17)
+fn=(55)
+222 20 0
+
+fl=(17)
+fn=(55)
+222 10 0
+
+fl=(17)
+fn=(55)
+222 20 0
+
+fl=(17)
+fn=(55)
+222 10 0
+
+fl=(17)
+fn=(55)
+222 20 0
+
+fl=(17)
+fn=(55)
+222 20 0
+
+fl=(17)
+fn=(55)
+222 10 0
+
+fl=(17)
+fn=(56)
+191 2060 0
+cfl=(17)
+cfn=(55)
+calls=1 0 0
+198 30 0
+cfl=(17)
+cfn=(55)
+calls=1 0 0
+198 20 0
+cfl=(17)
+cfn=(55)
+calls=1 0 0
+198 20 0
+cfl=(17)
+cfn=(55)
+calls=1 0 0
+198 20 0
+cfl=(17)
+cfn=(55)
+calls=1 0 0
+198 20 0
+cfl=(17)
+cfn=(55)
+calls=1 0 0
+198 10 0
+cfl=(17)
+cfn=(55)
+calls=1 0 0
+198 20 0
+cfl=(17)
+cfn=(55)
+calls=1 0 0
+198 10 0
+cfl=(17)
+cfn=(55)
+calls=1 0 0
+198 20 0
+cfl=(17)
+cfn=(55)
+calls=1 0 0
+198 20 0
+cfl=(17)
+cfn=(55)
+calls=1 0 0
+198 10 0
+
+fl=(1)
+fn=(18)
+162 30 80
+
+fl=(1)
+fn=(18)
+163 10 40
+
+fl=(1)
+fn=(18)
+164 10 32
+
+fl=(17)
+fn=(55)
+222 20 0
+
+fl=(17)
+fn=(55)
+222 20 0
+
+fl=(17)
+fn=(56)
+191 180 0
+cfl=(17)
+cfn=(55)
+calls=1 0 0
+198 20 0
+
+fl=(17)
+fn=(55)
+222 20 0
+
+fl=(17)
+fn=(55)
+222 10 0
+
+fl=(17)
+fn=(55)
+222 10 0
+
+fl=(17)
+fn=(56)
+191 500 0
+cfl=(17)
+cfn=(55)
+calls=1 0 0
+198 20 0
+cfl=(17)
+cfn=(55)
+calls=1 0 0
+198 10 0
+cfl=(17)
+cfn=(55)
+calls=1 0 0
+198 10 0
+
+fl=(1)
+fn=(18)
+162 10 80
+
+fl=(1)
+fn=(18)
+163 10 0
+
+fl=(1)
+fn=(18)
+164 20 40
+
+fl=(17)
+fn=(55)
+222 20 0
+
+fl=(1)
+fn=(58)
+59 70 0
+
+fl=(18)
+fn=(59)
+56 180 216
+cfl=(1)
+cfn=(58)
+calls=1 0 0
+59 70 0
+
+fl=(1)
+fn=(60)
+94 4620 56
+
+fl=(1)
+fn=(61)
+77 20 0
+
+fl=(1)
+fn=(62)
+80 30 0
+
+fl=(18)
+fn=(63)
+72 280 0
+cfl=(1)
+cfn=(61)
+calls=1 0 0
+77 20 0
+cfl=(1)
+cfn=(62)
+calls=1 0 0
+80 30 0
+
+fl=(17)
+fn=(64)
+69 680 0
+cfl=(18)
+cfn=(59)
+calls=1 0 0
+93 250 216
+cfl=(1)
+cfn=(60)
+calls=1 0 0
+94 4620 56
+cfl=(18)
+cfn=(63)
+calls=1 0 0
+95 330 0
+
+fl=(17)
+fn=(65)
+110 1220 0
+cfl=(17)
+cfn=(55)
+calls=1 0 0
+112 20 0
+cfl=(17)
+cfn=(64)
+calls=1 0 0
+140 5880 56
+
+fl=(17)
+fn=(55)
+222 30 0
+
+fl=(17)
+fn=(55)
+222 20 0
+
+fl=(17)
+fn=(55)
+222 10 0
+
+fl=(17)
+fn=(56)
+191 520 0
+cfl=(17)
+cfn=(55)
+calls=1 0 0
+198 30 0
+cfl=(17)
+cfn=(55)
+calls=1 0 0
+198 20 0
+cfl=(17)
+cfn=(55)
+calls=1 0 0
+198 10 0
+
+fl=(1)
+fn=(18)
+162 20 80
+
+fl=(1)
+fn=(18)
+163 10 32
+
+fl=(1)
+fn=(18)
+164 10 40
+
+fl=(17)
+fn=(55)
+222 20 0
+
+fl=(1)
+fn=(58)
+59 70 0
+
+fl=(18)
+fn=(59)
+56 160 216
+cfl=(1)
+cfn=(58)
+calls=1 0 0
+59 70 0
+
+fl=(1)
+fn=(60)
+94 5280 56
+
+fl=(1)
+fn=(61)
+77 30 0
+
+fl=(1)
+fn=(62)
+80 30 0
+
+fl=(18)
+fn=(63)
+72 300 0
+cfl=(1)
+cfn=(61)
+calls=1 0 0
+77 30 0
+cfl=(1)
+cfn=(62)
+calls=1 0 0
+80 30 0
+
+fl=(17)
+fn=(64)
+69 670 0
+cfl=(18)
+cfn=(59)
+calls=1 0 0
+93 230 216
+cfl=(1)
+cfn=(60)
+calls=1 0 0
+94 5280 56
+cfl=(18)
+cfn=(63)
+calls=1 0 0
+95 360 0
+
+fl=(17)
+fn=(65)
+110 1280 0
+cfl=(17)
+cfn=(55)
+calls=1 0 0
+112 20 0
+cfl=(17)
+cfn=(64)
+calls=1 0 0
+140 6540 56
+
+fl=(1)
+fn=(66)
+180 10 0
+
+fl=(17)
+fn=(65)
+110 4200 0
+cfl=(17)
+cfn=(55)
+calls=1 0 0
+112 20 0
+cfl=(17)
+cfn=(56)
+calls=1 0 0
+143 200 0
+cfl=(17)
+cfn=(56)
+calls=1 0 0
+152 540 0
+cfl=(1)
+cfn=(18)
+calls=1 0 0
+162 10 80
+cfl=(1)
+cfn=(18)
+calls=1 0 0
+163 10 0
+cfl=(1)
+cfn=(18)
+calls=1 0 0
+164 20 40
+cfl=(17)
+cfn=(65)
+calls=1 0 0
+166 7120 56
+cfl=(17)
+cfn=(56)
+calls=1 0 0
+177 580 0
+cfl=(1)
+cfn=(18)
+calls=1 0 0
+162 20 80
+cfl=(1)
+cfn=(18)
+calls=1 0 0
+163 10 32
+cfl=(1)
+cfn=(18)
+calls=1 0 0
+164 10 40
+cfl=(17)
+cfn=(65)
+calls=1 0 0
+166 7840 56
+cfl=(1)
+cfn=(66)
+calls=1 0 0
+180 10 0
+
+fl=(1)
+fn=(66)
+180 10 0
+
+fl=(17)
+fn=(65)
+110 5090 0
+cfl=(17)
+cfn=(55)
+calls=1 0 0
+112 60 0
+cfl=(17)
+cfn=(56)
+calls=1 0 0
+143 2310 0
+cfl=(17)
+cfn=(56)
+calls=1 0 0
+152 2200 0
+cfl=(1)
+cfn=(18)
+calls=1 0 0
+162 20 80
+cfl=(1)
+cfn=(18)
+calls=1 0 0
+163 10 40
+cfl=(1)
+cfn=(18)
+calls=1 0 0
+164 10 32
+cfl=(17)
+cfn=(65)
+calls=1 0 0
+166 37660 584
+cfl=(17)
+cfn=(56)
+calls=1 0 0
+177 2260 0
+cfl=(1)
+cfn=(18)
+calls=1 0 0
+162 30 80
+cfl=(1)
+cfn=(18)
+calls=1 0 0
+163 10 40
+cfl=(1)
+cfn=(18)
+calls=1 0 0
+164 10 32
+cfl=(17)
+cfn=(65)
+calls=1 0 0
+166 20590 0
+cfl=(1)
+cfn=(66)
+calls=1 0 0
+180 10 0
+
+fl=(17)
+fn=(67) Laminas\Stdlib\Glob::glob
+52 610 0
+cfl=(17)
+cfn=(65)
+calls=1 0 0
+55 70270 584
+
+fl=(13)
+fn=(68) Laminas\ConfigAggregator\PhpFileProvider->glob
+23 750 0
+cfl=(4)
+cfn=(24)
+calls=1 0 0
+25 5950 0
+cfl=(17)
+cfn=(67)
+calls=1 0 0
+25 70880 584
+
+fl=(14)
+fn=(53)
+26 430 0
+cfl=(13)
+cfn=(68)
+calls=1 0 0
+28 77580 584
+
+fl=(1)
+fn=(43)
+118 20 0
+
+fl=(11)
+fn=(44)
+109 180 0
+cfl=(1)
+cfn=(43)
+calls=1 0 0
+118 20 0
+
+fl=(14)
+fn=(53)
+26 40 448
+
+fl=(17)
+fn=(55)
+222 20 0
+
+fl=(1)
+fn=(58)
+59 60 0
+
+fl=(18)
+fn=(59)
+56 160 216
+cfl=(1)
+cfn=(58)
+calls=1 0 0
+59 60 0
+
+fl=(1)
+fn=(60)
+94 4720 56
+
+fl=(1)
+fn=(61)
+77 20 0
+
+fl=(1)
+fn=(62)
+80 20 0
+
+fl=(18)
+fn=(63)
+72 290 0
+cfl=(1)
+cfn=(61)
+calls=1 0 0
+77 20 0
+cfl=(1)
+cfn=(62)
+calls=1 0 0
+80 20 0
+
+fl=(17)
+fn=(64)
+69 630 0
+cfl=(18)
+cfn=(59)
+calls=1 0 0
+93 220 216
+cfl=(1)
+cfn=(60)
+calls=1 0 0
+94 4720 56
+cfl=(18)
+cfn=(63)
+calls=1 0 0
+95 330 0
+
+fl=(17)
+fn=(65)
+110 1370 0
+cfl=(17)
+cfn=(55)
+calls=1 0 0
+112 20 0
+cfl=(17)
+cfn=(64)
+calls=1 0 0
+140 5900 56
+
+fl=(17)
+fn=(67)
+52 240 0
+cfl=(17)
+cfn=(65)
+calls=1 0 0
+55 7290 56
+
+fl=(13)
+fn=(68)
+23 230 0
+cfl=(17)
+cfn=(67)
+calls=1 0 0
+25 7530 56
+
+fl=(14)
+fn=(53)
+26 270 0
+cfl=(13)
+cfn=(68)
+calls=1 0 0
+28 7760 56
+
+fl=(11)
+fn=(69) Laminas\ConfigAggregator\ConfigAggregator->loadConfigFromProviders
+226 5560 0
+cfl=(11)
+cfn=(44)
+calls=1 0 0
+230 6910 680
+cfl=(15)
+cfn=(46)
+calls=1 0 0
+231 320 376
+cfl=(11)
+cfn=(48)
+calls=1 0 0
+233 560 376
+cfl=(11)
+cfn=(44)
+calls=1 0 0
+230 180 0
+cfl=(12)
+cfn=(49)
+calls=1 0 0
+231 30 0
+cfl=(11)
+cfn=(48)
+calls=1 0 0
+233 370 0
+cfl=(11)
+cfn=(44)
+calls=1 0 0
+230 6360 40
+cfl=(16)
+cfn=(52)
+calls=1 0 0
+231 270 376
+cfl=(11)
+cfn=(48)
+calls=1 0 0
+233 1370 752
+cfl=(11)
+cfn=(44)
+calls=1 0 0
+230 150 0
+cfl=(14)
+cfn=(53)
+calls=1 0 0
+231 80 448
+cfl=(14)
+cfn=(53)
+calls=1 0 0
+238 78010 456
+cfl=(11)
+cfn=(44)
+calls=1 0 0
+230 200 0
+cfl=(14)
+cfn=(53)
+calls=1 0 0
+231 40 448
+cfl=(14)
+cfn=(53)
+calls=1 0 0
+238 8030 0
+
+fl=(11)
+fn=(70) Laminas\ConfigAggregator\ConfigAggregator->postProcessConfig
+314 50 0
+
+fl=(11)
+fn=(71) Laminas\ConfigAggregator\ConfigAggregator->cacheConfig
+270 100 0
+
+fl=(11)
+fn=(72) Laminas\ConfigAggregator\ConfigAggregator->__construct
+71 3630 0
+cfl=(11)
+cfn=(39)
+calls=1 0 0
+77 6680 0
+cfl=(11)
+cfn=(40)
+calls=1 0 0
+81 80 0
+cfl=(11)
+cfn=(69)
+calls=1 0 0
+82 108440 2352
+cfl=(11)
+cfn=(70)
+calls=1 0 0
+83 50 0
+cfl=(11)
+cfn=(71)
+calls=1 0 0
+84 100 0
+
+fl=(11)
+fn=(73) Laminas\ConfigAggregator\ConfigAggregator->getMergedConfig
+90 30 0
+
+fl=(19) C:\htdocs\mm-servicemanager\config\config.php
+fn=(74) require::C:\htdocs\mm-servicemanager\config\config.php
+1 3590 520
+cfl=(4)
+cfn=(24)
+calls=1 0 0
+15 8770 0
+cfl=(4)
+cfn=(24)
+calls=1 0 0
+19 5850 0
+cfl=(12)
+cfn=(34)
+calls=1 0 0
+19 100 0
+cfl=(4)
+cfn=(24)
+calls=1 0 0
+30 12060 0
+cfl=(1)
+cfn=(37)
+calls=1 0 0
+30 3650 64
+cfl=(14)
+cfn=(38)
+calls=1 0 0
+30 70 0
+cfl=(1)
+cfn=(37)
+calls=1 0 0
+33 2620 64
+cfl=(14)
+cfn=(38)
+calls=1 0 0
+33 40 0
+cfl=(11)
+cfn=(72)
+calls=1 0 0
+15 118980 1760
+cfl=(11)
+cfn=(73)
+calls=1 0 0
+36 30 0
+
+fl=(1)
+fn=(16)
+496 30 64
+
+fl=(1)
+fn=(17)
+501 20 0
+
+fl=(1)
+fn=(18)
+502 20 48
+
+fl=(1)
+fn=(18)
+505 10 48
+
+fl=(1)
+fn=(19)
+507 3980 0
+
+fl=(4)
+fn=(20)
+493 850 0
+cfl=(1)
+cfn=(16)
+calls=1 0 0
+496 30 64
+cfl=(1)
+cfn=(17)
+calls=1 0 0
+501 20 0
+cfl=(1)
+cfn=(18)
+calls=1 0 0
+502 20 48
+cfl=(1)
+cfn=(18)
+calls=1 0 0
+505 10 48
+cfl=(1)
+cfn=(19)
+calls=1 0 0
+507 3980 0
+
+fl=(4)
+fn=(21)
+443 420 0
+cfl=(4)
+cfn=(20)
+calls=1 0 0
+459 4910 128
+
+fl=(1)
+fn=(16)
+496 40 80
+
+fl=(1)
+fn=(17)
+501 20 0
+
+fl=(1)
+fn=(18)
+502 10 48
+
+fl=(1)
+fn=(18)
+505 20 56
+
+fl=(1)
+fn=(19)
+507 3250 0
+
+fl=(4)
+fn=(20)
+493 680 0
+cfl=(1)
+cfn=(16)
+calls=1 0 0
+496 40 80
+cfl=(1)
+cfn=(17)
+calls=1 0 0
+501 20 0
+cfl=(1)
+cfn=(18)
+calls=1 0 0
+502 10 48
+cfl=(1)
+cfn=(18)
+calls=1 0 0
+505 20 56
+cfl=(1)
+cfn=(19)
+calls=1 0 0
+507 3250 0
+
+fl=(4)
+fn=(21)
+443 360 0
+cfl=(4)
+cfn=(20)
+calls=1 0 0
+459 4020 160
+
+fl=(20) C:\htdocs\mm-servicemanager\vendor\laminas\laminas-servicemanager\src\ServiceLocatorInterface.php
+fn=(75) include::C:\htdocs\mm-servicemanager\vendor\laminas\laminas-servicemanager\src\ServiceLocatorInterface.php
+1 80 0
+
+fl=(4)
+fn=(23)
+569 520 0
+cfl=(20)
+cfn=(75)
+calls=1 0 0
+571 80 0
+
+fl=(4)
+fn=(24)
+425 460 0
+cfl=(4)
+cfn=(21)
+calls=1 0 0
+427 4380 160
+cfl=(4)
+cfn=(23)
+calls=1 0 0
+428 600 0
+
+fl=(21) C:\htdocs\mm-servicemanager\vendor\laminas\laminas-servicemanager\src\ServiceManager.php
+fn=(76) include::C:\htdocs\mm-servicemanager\vendor\laminas\laminas-servicemanager\src\ServiceManager.php
+1 400 0
+cfl=(4)
+cfn=(24)
+calls=1 0 0
+98 5440 0
+
+fl=(4)
+fn=(23)
+569 580 0
+cfl=(21)
+cfn=(76)
+calls=1 0 0
+571 5840 0
+
+fl=(4)
+fn=(24)
+425 470 0
+cfl=(4)
+cfn=(21)
+calls=1 0 0
+427 5330 128
+cfl=(4)
+cfn=(23)
+calls=1 0 0
+428 6420 0
+
+fl=(21)
+fn=(77) Laminas\ServiceManager\ServiceManager->validateServiceNames
+774 70 0
+
+fl=(21)
+fn=(78) Laminas\ServiceManager\ServiceManager->mapAliasesToTargets
+882 160 0
+
+fl=(21)
+fn=(79) Laminas\ServiceManager\ServiceManager->configure
+327 840 1128
+cfl=(21)
+cfn=(77)
+calls=1 0 0
+331 70 0
+cfl=(21)
+cfn=(78)
+calls=1 0 0
+358 160 0
+
+fl=(21)
+fn=(80) Laminas\ServiceManager\ServiceManager->__construct
+196 440 0
+cfl=(21)
+cfn=(79)
+calls=1 0 0
+199 1070 1128
+
+fl=(22) C:\htdocs\mm-servicemanager\config\container.php
+fn=(81) require::C:\htdocs\mm-servicemanager\config\container.php
+1 1950 1072
+cfl=(19)
+cfn=(74)
+calls=1 0 0
+8 155760 2408
+cfl=(4)
+cfn=(24)
+calls=1 0 0
+14 12220 0
+cfl=(21)
+cfn=(80)
+calls=1 0 0
+14 1510 1128
+
+fl=(1)
+fn=(16)
+496 30 48
+
+fl=(1)
+fn=(17)
+501 20 0
+
+fl=(1)
+fn=(18)
+502 10 32
+
+fl=(1)
+fn=(18)
+505 10 48
+
+fl=(1)
+fn=(19)
+507 3400 0
+
+fl=(4)
+fn=(20)
+493 720 0
+cfl=(1)
+cfn=(16)
+calls=1 0 0
+496 30 48
+cfl=(1)
+cfn=(17)
+calls=1 0 0
+501 20 0
+cfl=(1)
+cfn=(18)
+calls=1 0 0
+502 10 32
+cfl=(1)
+cfn=(18)
+calls=1 0 0
+505 10 48
+cfl=(1)
+cfn=(19)
+calls=1 0 0
+507 3400 0
+
+fl=(4)
+fn=(21)
+443 360 0
+cfl=(4)
+cfn=(20)
+calls=1 0 0
+459 4190 112
+
+fl=(23) C:\htdocs\mm-servicemanager\src\App\src\ApplicationFactory.php
+fn=(82) include::C:\htdocs\mm-servicemanager\src\App\src\ApplicationFactory.php
+1 20 0
+
+fl=(4)
+fn=(23)
+569 420 0
+cfl=(23)
+cfn=(82)
+calls=1 0 0
+571 20 0
+
+fl=(4)
+fn=(24)
+425 450 0
+cfl=(4)
+cfn=(21)
+calls=1 0 0
+427 4550 112
+cfl=(4)
+cfn=(23)
+calls=1 0 0
+428 440 0
+
+fl=(1)
+fn=(42)
+566 300 0
+cfl=(4)
+cfn=(24)
+calls=1 0 0
+566 5440 0
+
+fl=(1)
+fn=(43)
+571 40 0
+
+fl=(21)
+fn=(83) Laminas\ServiceManager\ServiceManager->getFactory
+561 1390 40
+cfl=(1)
+cfn=(42)
+calls=1 0 0
+566 5740 0
+cfl=(1)
+cfn=(43)
+calls=1 0 0
+571 40 0
+
+fl=(1)
+fn=(16)
+496 50 40
+
+fl=(1)
+fn=(17)
+501 10 0
+
+fl=(1)
+fn=(18)
+502 10 32
+
+fl=(1)
+fn=(18)
+505 10 40
+
+fl=(1)
+fn=(19)
+507 3250 0
+
+fl=(4)
+fn=(20)
+493 680 0
+cfl=(1)
+cfn=(16)
+calls=1 0 0
+496 50 40
+cfl=(1)
+cfn=(17)
+calls=1 0 0
+501 10 0
+cfl=(1)
+cfn=(18)
+calls=1 0 0
+502 10 32
+cfl=(1)
+cfn=(18)
+calls=1 0 0
+505 10 40
+cfl=(1)
+cfn=(19)
+calls=1 0 0
+507 3250 0
+
+fl=(4)
+fn=(21)
+443 350 0
+cfl=(4)
+cfn=(20)
+calls=1 0 0
+459 4010 112
+
+fl=(24) C:\htdocs\mm-servicemanager\src\App\src\Application.php
+fn=(84) include::C:\htdocs\mm-servicemanager\src\App\src\Application.php
+1 30 0
+
+fl=(4)
+fn=(23)
+569 410 0
+cfl=(24)
+cfn=(84)
+calls=1 0 0
+571 30 0
+
+fl=(4)
+fn=(24)
+425 430 0
+cfl=(4)
+cfn=(21)
+calls=1 0 0
+427 4360 112
+cfl=(4)
+cfn=(23)
+calls=1 0 0
+428 440 0
+
+fl=(1)
+fn=(16)
+496 20 48
+
+fl=(1)
+fn=(17)
+501 10 0
+
+fl=(1)
+fn=(18)
+502 10 32
+
+fl=(1)
+fn=(18)
+505 10 48
+
+fl=(1)
+fn=(19)
+507 3460 0
+
+fl=(4)
+fn=(20)
+493 980 0
+cfl=(1)
+cfn=(16)
+calls=1 0 0
+496 20 48
+cfl=(1)
+cfn=(17)
+calls=1 0 0
+501 10 0
+cfl=(1)
+cfn=(18)
+calls=1 0 0
+502 10 32
+cfl=(1)
+cfn=(18)
+calls=1 0 0
+505 10 48
+cfl=(1)
+cfn=(19)
+calls=1 0 0
+507 3460 0
+
+fl=(4)
+fn=(21)
+443 350 0
+cfl=(4)
+cfn=(20)
+calls=1 0 0
+459 4490 112
+
+fl=(25) C:\htdocs\mm-servicemanager\src\App\src\DepOneFactory.php
+fn=(85) include::C:\htdocs\mm-servicemanager\src\App\src\DepOneFactory.php
+1 30 0
+
+fl=(4)
+fn=(23)
+569 410 0
+cfl=(25)
+cfn=(85)
+calls=1 0 0
+571 30 0
+
+fl=(4)
+fn=(24)
+425 420 0
+cfl=(4)
+cfn=(21)
+calls=1 0 0
+427 4840 112
+cfl=(4)
+cfn=(23)
+calls=1 0 0
+428 440 0
+
+fl=(1)
+fn=(42)
+566 320 0
+cfl=(4)
+cfn=(24)
+calls=1 0 0
+566 5700 0
+
+fl=(1)
+fn=(43)
+571 30 0
+
+fl=(21)
+fn=(83)
+561 540 40
+cfl=(1)
+cfn=(42)
+calls=1 0 0
+566 6020 0
+cfl=(1)
+cfn=(43)
+calls=1 0 0
+571 30 0
+
+fl=(1)
+fn=(16)
+496 30 40
+
+fl=(1)
+fn=(17)
+501 10 0
+
+fl=(1)
+fn=(18)
+502 10 32
+
+fl=(1)
+fn=(18)
+505 20 40
+
+fl=(1)
+fn=(19)
+507 3430 0
+
+fl=(4)
+fn=(20)
+493 640 0
+cfl=(1)
+cfn=(16)
+calls=1 0 0
+496 30 40
+cfl=(1)
+cfn=(17)
+calls=1 0 0
+501 10 0
+cfl=(1)
+cfn=(18)
+calls=1 0 0
+502 10 32
+cfl=(1)
+cfn=(18)
+calls=1 0 0
+505 20 40
+cfl=(1)
+cfn=(19)
+calls=1 0 0
+507 3430 0
+
+fl=(4)
+fn=(21)
+443 360 0
+cfl=(4)
+cfn=(20)
+calls=1 0 0
+459 4140 112
+
+fl=(26) C:\htdocs\mm-servicemanager\src\App\src\DepOne.php
+fn=(86) include::C:\htdocs\mm-servicemanager\src\App\src\DepOne.php
+1 20 0
+
+fl=(4)
+fn=(23)
+569 390 0
+cfl=(26)
+cfn=(86)
+calls=1 0 0
+571 20 0
+
+fl=(4)
+fn=(24)
+425 390 0
+cfl=(4)
+cfn=(21)
+calls=1 0 0
+427 4500 112
+cfl=(4)
+cfn=(23)
+calls=1 0 0
+428 410 0
+
+fl=(1)
+fn=(16)
+496 20 48
+
+fl=(1)
+fn=(17)
+501 20 0
+
+fl=(1)
+fn=(18)
+502 20 32
+
+fl=(1)
+fn=(18)
+505 10 48
+
+fl=(1)
+fn=(19)
+507 3170 0
+
+fl=(4)
+fn=(20)
+493 620 0
+cfl=(1)
+cfn=(16)
+calls=1 0 0
+496 20 48
+cfl=(1)
+cfn=(17)
+calls=1 0 0
+501 20 0
+cfl=(1)
+cfn=(18)
+calls=1 0 0
+502 20 32
+cfl=(1)
+cfn=(18)
+calls=1 0 0
+505 10 48
+cfl=(1)
+cfn=(19)
+calls=1 0 0
+507 3170 0
+
+fl=(4)
+fn=(21)
+443 330 0
+cfl=(4)
+cfn=(20)
+calls=1 0 0
+459 3860 112
+
+fl=(27) C:\htdocs\mm-servicemanager\src\App\src\DepTwoFactory.php
+fn=(87) include::C:\htdocs\mm-servicemanager\src\App\src\DepTwoFactory.php
+1 10 0
+
+fl=(4)
+fn=(23)
+569 680 0
+cfl=(27)
+cfn=(87)
+calls=1 0 0
+571 10 0
+
+fl=(4)
+fn=(24)
+425 400 0
+cfl=(4)
+cfn=(21)
+calls=1 0 0
+427 4190 112
+cfl=(4)
+cfn=(23)
+calls=1 0 0
+428 690 0
+
+fl=(1)
+fn=(42)
+566 270 0
+cfl=(4)
+cfn=(24)
+calls=1 0 0
+566 5280 0
+
+fl=(1)
+fn=(43)
+571 30 0
+
+fl=(21)
+fn=(83)
+561 340 40
+cfl=(1)
+cfn=(42)
+calls=1 0 0
+566 5550 0
+cfl=(1)
+cfn=(43)
+calls=1 0 0
+571 30 0
+
+fl=(1)
+fn=(16)
+496 30 40
+
+fl=(1)
+fn=(17)
+501 10 0
+
+fl=(1)
+fn=(18)
+502 10 32
+
+fl=(1)
+fn=(18)
+505 10 40
+
+fl=(1)
+fn=(19)
+507 3250 0
+
+fl=(4)
+fn=(20)
+493 640 0
+cfl=(1)
+cfn=(16)
+calls=1 0 0
+496 30 40
+cfl=(1)
+cfn=(17)
+calls=1 0 0
+501 10 0
+cfl=(1)
+cfn=(18)
+calls=1 0 0
+502 10 32
+cfl=(1)
+cfn=(18)
+calls=1 0 0
+505 10 40
+cfl=(1)
+cfn=(19)
+calls=1 0 0
+507 3250 0
+
+fl=(4)
+fn=(21)
+443 320 0
+cfl=(4)
+cfn=(20)
+calls=1 0 0
+459 3950 112
+
+fl=(28) C:\htdocs\mm-servicemanager\src\App\src\DepTwo.php
+fn=(88) include::C:\htdocs\mm-servicemanager\src\App\src\DepTwo.php
+1 20 0
+
+fl=(4)
+fn=(23)
+569 390 0
+cfl=(28)
+cfn=(88)
+calls=1 0 0
+571 20 0
+
+fl=(4)
+fn=(24)
+425 3890 0
+cfl=(4)
+cfn=(21)
+calls=1 0 0
+427 4270 112
+cfl=(4)
+cfn=(23)
+calls=1 0 0
+428 410 0
+
+fl=(21)
+fn=(89) Laminas\ServiceManager\ServiceManager->get
+222 60 0
+
+fl=(28)
+fn=(90) App\DepTwo->__construct
+9 60 0
+
+fl=(27)
+fn=(91) App\DepTwoFactory->__invoke
+11 880 56
+cfl=(4)
+cfn=(24)
+calls=1 0 0
+13 8570 0
+cfl=(21)
+cfn=(89)
+calls=1 0 0
+13 60 0
+cfl=(28)
+cfn=(90)
+calls=1 0 0
+13 60 0
+
+fl=(21)
+fn=(92) Laminas\ServiceManager\ServiceManager->doCreate
+636 650 0
+cfl=(21)
+cfn=(83)
+calls=1 0 0
+641 5920 40
+cfl=(27)
+cfn=(91)
+calls=1 0 0
+642 9570 56
+
+fl=(21)
+fn=(89)
+222 450 0
+cfl=(21)
+cfn=(92)
+calls=1 0 0
+264 16140 96
+
+fl=(26)
+fn=(93) App\DepOne->__construct
+9 50 0
+
+fl=(25)
+fn=(94) App\DepOneFactory->__invoke
+11 740 56
+cfl=(4)
+cfn=(24)
+calls=1 0 0
+13 5300 0
+cfl=(21)
+cfn=(89)
+calls=1 0 0
+13 16590 96
+cfl=(26)
+cfn=(93)
+calls=1 0 0
+13 50 0
+
+fl=(21)
+fn=(92)
+636 650 0
+cfl=(21)
+cfn=(83)
+calls=1 0 0
+641 6590 40
+cfl=(25)
+cfn=(94)
+calls=1 0 0
+642 22680 152
+
+fl=(21)
+fn=(89)
+222 500 0
+cfl=(21)
+cfn=(92)
+calls=1 0 0
+264 29920 192
+
+fl=(21)
+fn=(89)
+222 20 0
+
+fl=(24)
+fn=(95) App\Application->__construct
+9 70 0
+
+fl=(23)
+fn=(96) App\ApplicationFactory->__invoke
+11 1460 80
+cfl=(4)
+cfn=(24)
+calls=1 0 0
+13 5230 0
+cfl=(21)
+cfn=(89)
+calls=1 0 0
+14 30420 192
+cfl=(21)
+cfn=(89)
+calls=1 0 0
+15 20 0
+cfl=(24)
+cfn=(95)
+calls=1 0 0
+13 70 0
+
+fl=(21)
+fn=(92)
+636 820 0
+cfl=(21)
+cfn=(83)
+calls=1 0 0
+641 7170 40
+cfl=(23)
+cfn=(96)
+calls=1 0 0
+642 37200 272
+
+fl=(21)
+fn=(89)
+222 520 0
+cfl=(21)
+cfn=(92)
+calls=1 0 0
+264 45190 312
+
+fl=(24)
+fn=(97) App\Application->run
+15 10 0
+
+fl=(29) C:\htdocs\mm-servicemanager\public\index.php
+fn=(98) {closure:C:\htdocs\mm-servicemanager\public\index.php:18-30}
+18 1300 0
+cfl=(22)
+cfn=(81)
+calls=1 0 0
+20 171440 4608
+cfl=(21)
+cfn=(89)
+calls=1 0 0
+25 45710 312
+cfl=(24)
+cfn=(97)
+calls=1 0 0
+29 10 0
+
+fl=(29)
+fn=(99) {main}
+1 3440 320
+cfl=(1)
+cfn=(1)
+calls=1 0 0
+12 420 64
+cfl=(1)
+cfn=(2)
+calls=1 0 0
+12 9500 48
+cfl=(10)
+cfn=(31)
+calls=1 0 0
+13 59040 4288
+cfl=(29)
+cfn=(98)
+calls=1 0 0
+30 218460 3728
+
+summary: 304170 371600
+

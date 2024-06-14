@@ -19,12 +19,12 @@ require 'vendor/autoload.php';
     /** @var \Psr\Container\ContainerInterface $container */
     $container = require 'config/container.php';
 
-    Debug::dump($container, '$container');
+    //Debug::dump($container, '$container');
 
     /** @var \Mezzio\Application $app */
     $app = $container->get(\App\Application::class);
 
-    Debug::dump($app, '$app');
+    //Debug::dump($app, '$app');
 
     $app->run();
 })();

@@ -1,0 +1,13 @@
+{
+    "require": {
+        "laminas/laminas-component-installer": "^3.4",
+        "laminas/laminas-config-aggregator": "^1.15",
+        "laminas/laminas-servicemanager": "3.22.1",
+        "webinertia/webinertia-utils": "^0.0.10"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/App/src/"
+        }
+    }
+}

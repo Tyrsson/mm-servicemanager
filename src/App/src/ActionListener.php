@@ -43,5 +43,6 @@ final class ActionListener extends AbstractListenerAggregate implements Dispatch
                 // todo: handle catching this....
             }
         }
+        //return null;
     }
 }

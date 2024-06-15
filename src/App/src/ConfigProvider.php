@@ -6,7 +6,10 @@ namespace App;
 
 use App\Container;
 use App\Actions\Action;
+use App\Actions\Listener\LoginListener;
 use App\Actions\LoginAction;
+use App\Container\MessageListenerFactory;
+use App\Container\RequestAwareDelegatorFactory;
 use Laminas\EventManager\EventManager;
 use Laminas\EventManager\EventManagerInterface;
 use Laminas\HttpHandlerRunner\Emitter\EmitterInterface;
@@ -36,6 +39,7 @@ final class ConfigProvider
                 DisplayListener::class  => Container\DisplayListenerFactory::class,
                 EmitterInterface::class => Container\EmitterFactory::class,
                 EventManager::class     => Container\EventManagerFactory::class,
+                LoginListener::class    => InvokableFactory::class,
                 MessageListener::class  => Container\MessageListenerFactory::class,
                 Actions\ActionManager::class => Actions\Container\ActionManagerFactory::class,
             ],
@@ -48,11 +52,16 @@ final class ConfigProvider
             'aliases'   => [
                 Action::login->value => LoginAction::class,
             ],
+            'delegators' => [
+                LoginAction::class => [
+                    RequestAwareDelegatorFactory::class, // runs only for LoginAction
+                ],
+            ],
             'factories' => [
-                LoginAction::class => InvokableFactory::class,
+                LoginAction::class   => Actions\Container\LoginActionFactory::class,
             ],
             'initializers' => [
-                Actions\Container\EventManagerAwareInitializer::class,
+                Actions\Container\EventManagerAwareInitializer::class, // Runs for all services created by ActionManager
             ],
         ];
     }

@@ -14,6 +14,8 @@ $cacheConfig = [
 
 $aggregator = new ConfigAggregator([
 
+    \Laminas\HttpHandlerRunner\ConfigProvider::class,
+    \Laminas\Diactoros\ConfigProvider::class,
     \Webinertia\Utils\ConfigProvider::class,
     // Include cache configuration
     new ArrayProvider($cacheConfig),

@@ -34,6 +34,13 @@ final class LoginAction extends AbstractAction implements RequestAwareInterface
             ],
             'userInstance' => $this->user,
         ]);
-        return new HtmlResponse('<b>LoginAction is running.</b><br>' . Debug::dump($this->user, 'User\Entity\User', false, false));
+        return new HtmlResponse(
+            '<b>LoginAction is running.</b><br>'
+            . Debug::dump(
+                var: $this->user,
+                label: 'User\Entity\User',
+                echo: false
+            )
+        );
     }
 }

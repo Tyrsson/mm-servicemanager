@@ -1,2 +1,1 @@
-# mm-servicemanager
-Code related to the Mastering Mezzio: ServiceManager article
+# Event Driven SMF architecture prototyping

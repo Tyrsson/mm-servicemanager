@@ -22,6 +22,7 @@ final class ApplicationFactory
         /** @var ServerRequestFactory */
         $factory = $container->get(ServerRequestFactoryInterface::class);
         $app = new Application(
+            $container,
             $factory::fromGlobals(),
             $container->get(EmitterInterface::class)
         );

@@ -8,6 +8,7 @@ use Laminas\Diactoros\Response\HtmlResponse;
 use Laminas\EventManager\EventManagerAwareInterface;
 use Laminas\EventManager\EventManagerAwareTrait;
 use Laminas\HttpHandlerRunner\Emitter\EmitterInterface;
+use Laminas\ServiceManager\ServiceManager;
 use Psr\Http\Message\ServerRequestInterface;
 use Psr\Http\Message\ResponseInterface;
 
@@ -18,6 +19,7 @@ final class Application implements EventManagerAwareInterface
     use EventManagerAwareTrait;
 
     public function __construct(
+        private ServiceManager $serviceManager,
         private ServerRequestInterface $request,
         private EmitterInterface $emitter
     ) {
@@ -25,6 +27,8 @@ final class Application implements EventManagerAwareInterface
 
     public function run()
     {
+        $config = $this->serviceManager->get('config');
+        $this->bootstrap($config['mod_listeners']);
         $this->dispatch($this->request);
     }
 
@@ -39,6 +43,14 @@ final class Application implements EventManagerAwareInterface
             $this->emitter->emit($results->last());
         } else {
             $this->emitter->emit(new HtmlResponse('<b>Not Found</b>', 404));
+        }
+    }
+
+    private function bootstrap(array $modListeners): void
+    {
+        $eventManager = $this->getEventManager();
+        foreach ($modListeners as $mod) {
+            $this->serviceManager->get($mod)->attach($eventManager);
         }
     }
 }

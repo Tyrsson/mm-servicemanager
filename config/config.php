@@ -13,7 +13,6 @@ $cacheConfig = [
 ];
 
 $aggregator = new ConfigAggregator([
-
     \Laminas\HttpHandlerRunner\ConfigProvider::class,
     \Laminas\Diactoros\ConfigProvider::class,
     \Webinertia\Utils\ConfigProvider::class,
@@ -23,6 +22,7 @@ $aggregator = new ConfigAggregator([
     // Default App module config
     App\ConfigProvider::class, // adds our ConfigProvider to the ServiceManager config
     \User\ConfigProvider::class, // add the User Module to the ServiceManager config
+    \Mod\ConfigProvider::class, // initialize Mods
 
     // Load application config in a pre-defined order in such a way that local settings
     // overwrite global settings. (Loaded as first to last):
@@ -30,6 +30,8 @@ $aggregator = new ConfigAggregator([
     //   - `*.global.php`
     //   - `local.php`
     //   - `*.local.php`
+    // mod config before autoloaded dev config so the dev overrides
+    new PhpFileProvider(realpath(__DIR__ . '/../') . '/src/Mod/src/*/mod.config.php'),
     new PhpFileProvider(realpath(__DIR__) . '/autoload/{{,*.}global,{,*.}local}.php'),
 
     // Load development config if it exists

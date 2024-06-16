@@ -11,6 +11,7 @@ use Laminas\Diactoros\ServerRequest;
 use Psr\Http\Message\ResponseInterface;
 use User\Entity\User;
 use User\UserInterface;
+use Webinertia\Utils\Debug;
 
 final class LoginAction extends AbstractAction implements RequestAwareInterface
 {
@@ -23,8 +24,9 @@ final class LoginAction extends AbstractAction implements RequestAwareInterface
 
     public function run(): ?ResponseInterface
     {
-        /** @var ServerRequest */
-        $result = $this->getEventManager()->trigger(Action::login->value, $this, [
+        $eventManager = $this->getEventManager();
+        $eventManager->addIdentifiers([static::class]);
+        $result = $eventManager->trigger(Action::login->value, $this, [
             'userData' => [
                 'userName' => 'Tyrsson',
                 'userId' => 1,
@@ -32,6 +34,6 @@ final class LoginAction extends AbstractAction implements RequestAwareInterface
             ],
             'userInstance' => $this->user,
         ]);
-        return new HtmlResponse('<b>LoginAction is running.</b>');
+        return new HtmlResponse('<b>LoginAction is running.</b><br>' . Debug::dump($this->user, 'User\Entity\User', false, false));
     }
 }

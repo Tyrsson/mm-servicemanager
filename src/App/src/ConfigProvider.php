@@ -22,6 +22,7 @@ final class ConfigProvider
         return [
             'dependencies'   => $this->getDependencies(),
             'action_manager' => $this->getActionManagerConfig(),
+            'listeners'      => [], // list of listeners to attach, easy for mod authors
         ];
     }
 
@@ -34,14 +35,15 @@ final class ConfigProvider
             ],
             'factories' => [
                 ActionListener::class   => Container\ActionListenerFactory::class,
-                Application::class      => Container\ApplicationFactory::class,
+                Actions\ActionManager::class => Actions\Container\ActionManagerFactory::class,
+                App::class              => Container\AppFactory::class,
                 BoardListener::class    => Container\BoardListenerFactory::class,
                 DisplayListener::class  => Container\DisplayListenerFactory::class,
                 EmitterInterface::class => Container\EmitterFactory::class,
                 EventManager::class     => Container\EventManagerFactory::class,
                 LoginListener::class    => InvokableFactory::class,
                 MessageListener::class  => Container\MessageListenerFactory::class,
-                Actions\ActionManager::class => Actions\Container\ActionManagerFactory::class,
+                TemplateManager::class  => Container\TemplateManagerFactory::class,
             ],
         ];
     }

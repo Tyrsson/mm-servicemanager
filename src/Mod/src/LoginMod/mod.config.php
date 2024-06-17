@@ -10,7 +10,7 @@ return [
             LoginListener::class => LoginListenerFactory::class,
         ],
     ],
-    'mod_listeners' => [
+    'listeners' => [
         LoginListener::class,
     ],
 ];

@@ -12,11 +12,21 @@ use Laminas\ServiceManager\ServiceManager;
 use Psr\Http\Message\ServerRequestInterface;
 use Psr\Http\Message\ResponseInterface;
 
+use function array_merge;
+use function array_unique;
 use function compact;
 
-final class Application implements EventManagerAwareInterface
+final class App implements EventManagerAwareInterface
 {
     use EventManagerAwareTrait;
+
+    private $defaultListeners = [
+        BoardListener::class,
+        MessageListener::class,
+        DisplayListener::class,
+        ActionListener::class,
+        TemplateManager::class,
+    ];
 
     public function __construct(
         private ServiceManager $serviceManager,
@@ -28,7 +38,7 @@ final class Application implements EventManagerAwareInterface
     public function run()
     {
         $config = $this->serviceManager->get('config');
-        $this->bootstrap($config['mod_listeners']);
+        $this->bootstrap($config['listeners']);
         $this->dispatch($this->request);
     }
 
@@ -46,11 +56,22 @@ final class Application implements EventManagerAwareInterface
         }
     }
 
-    private function bootstrap(array $modListeners): void
+    private function bootstrap(array $listeners = []): self
     {
         $eventManager = $this->getEventManager();
-        foreach ($modListeners as $mod) {
-            $this->serviceManager->get($mod)->attach($eventManager);
+        $listeners    = array_unique(array_merge($this->defaultListeners, $listeners));
+        // lets setup and attach our default listeners
+        foreach ($listeners as $listener) {
+            $this->serviceManager->get($listener)->attach($eventManager);
         }
+        // setup the bootstrap event in case any mods needs to get in on the action
+        $event = new AppEvent();
+        $event->setName(AppEvents::Bootstrap->value);
+        $event->setTarget($this);
+        $event->setApp($this);
+        $event->setRequest($this->request);
+        $eventManager->triggerEvent($event);
+
+        return $this;
     }
 }

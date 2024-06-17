@@ -22,7 +22,7 @@ require 'vendor/autoload.php';
     //Debug::dump($container, '$container');
 
     /** @var \Mezzio\Application $app */
-    $app = $container->get(\App\Application::class); // get a Factoried instance of the Application class
+    $app = $container->get(\App\App::class); // get a Factoried instance of the Application class
 
     //Debug::dump($app, '$app');
 

@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace App\Container;
+namespace Template\Container;
 
-use App\TemplateManager;
+use Template\TemplateManager;
 use Psr\Container\ContainerInterface;
 
 final class TemplateManagerFactory

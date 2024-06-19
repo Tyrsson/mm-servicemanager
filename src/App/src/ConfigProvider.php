@@ -5,10 +5,8 @@ declare(strict_types=1);
 namespace App;
 
 use App\Container;
-use App\Actions\Action;
 use App\Actions\Listener\LoginListener;
 use App\Actions\LoginAction;
-use App\Container\MessageListenerFactory;
 use App\Container\RequestAwareDelegatorFactory;
 use Laminas\EventManager\EventManager;
 use Laminas\EventManager\EventManagerInterface;
@@ -20,9 +18,11 @@ final class ConfigProvider
     public function __invoke(): array
     {
         return [
-            'dependencies'   => $this->getDependencies(),
+            ActionInterface::class => $this->getActions(),
             'action_manager' => $this->getActionManagerConfig(),
+            'dependencies'   => $this->getDependencies(),
             'listeners'      => [], // list of listeners to attach, easy for mod authors
+            'templates'      => $this->getTemplates(),
         ];
     }
 
@@ -43,7 +43,20 @@ final class ConfigProvider
                 EventManager::class     => Container\EventManagerFactory::class,
                 LoginListener::class    => InvokableFactory::class,
                 MessageListener::class  => Container\MessageListenerFactory::class,
-                TemplateManager::class  => Container\TemplateManagerFactory::class,
+            ],
+            'initializers' => [
+                Container\ActionAwareInitializer::class,
+            ],
+        ];
+    }
+
+    public function getActions(): array
+    {
+        return [
+            'login' => [
+                'param'     => 'login',
+                'class'    => LoginAction::class,
+                'listener' => LoginListener::class,
             ],
         ];
     }
@@ -52,7 +65,7 @@ final class ConfigProvider
     {
         return [
             'aliases'   => [
-                Action::login->value => LoginAction::class,
+                ActionInterface::LOGIN_EVENT => LoginAction::class,
             ],
             'delegators' => [
                 LoginAction::class => [
@@ -60,10 +73,21 @@ final class ConfigProvider
                 ],
             ],
             'factories' => [
-                LoginAction::class   => Actions\Container\LoginActionFactory::class,
+                LoginAction::class => Actions\Container\LoginActionFactory::class,
             ],
             'initializers' => [
                 Actions\Container\EventManagerAwareInitializer::class, // Runs for all services created by ActionManager
+                Container\ActionAwareInitializer::class,
+            ],
+        ];
+    }
+
+    public function getTemplates(): array
+    {
+        return [
+            'paths' => [
+                'app'    => [__DIR__ . '/../templates/app'],
+                'layout' => [__DIR__ . '/../templates/layout'],
             ],
         ];
     }

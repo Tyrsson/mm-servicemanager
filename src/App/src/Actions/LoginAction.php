@@ -4,10 +4,10 @@ declare(strict_types=1);
 
 namespace App\Actions;
 
+use App\ActionInterface;
 use App\RequestAwareInterface;
 use App\RequestAwareTrait;
 use Laminas\Diactoros\Response\HtmlResponse;
-use Laminas\Diactoros\ServerRequest;
 use Psr\Http\Message\ResponseInterface;
 use User\Entity\User;
 use User\UserInterface;
@@ -25,8 +25,8 @@ final class LoginAction extends AbstractAction implements RequestAwareInterface
     public function run(): ?ResponseInterface
     {
         $eventManager = $this->getEventManager();
-        $eventManager->addIdentifiers([static::class]);
-        $result = $eventManager->trigger(Action::login->value, $this, [
+        //$eventManager->addIdentifiers([static::class]);
+        $result = $eventManager->trigger(ActionInterface::LOGIN_EVENT, $this, [
             'userData' => [
                 'userName' => 'Tyrsson',
                 'userId' => 1,

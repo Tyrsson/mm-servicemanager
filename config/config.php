@@ -22,6 +22,7 @@ $aggregator = new ConfigAggregator([
     // Default App module config
     App\ConfigProvider::class, // adds our ConfigProvider to the ServiceManager config
     \User\ConfigProvider::class, // add the User Module to the ServiceManager config
+    \Template\ConfigProvider::class, // add template module to the service manager config
     \Mod\ConfigProvider::class, // initialize Mods
 
     // Load application config in a pre-defined order in such a way that local settings

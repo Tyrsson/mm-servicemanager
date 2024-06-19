@@ -11,6 +11,7 @@ use Laminas\HttpHandlerRunner\Emitter\EmitterInterface;
 use Laminas\ServiceManager\ServiceManager;
 use Psr\Http\Message\ServerRequestInterface;
 use Psr\Http\Message\ResponseInterface;
+use Template\TemplateManager;
 
 use function array_merge;
 use function array_unique;
@@ -20,11 +21,14 @@ final class App implements EventManagerAwareInterface
 {
     use EventManagerAwareTrait;
 
+    private AppEvent $event;
+
     private $defaultListeners = [
         BoardListener::class,
         MessageListener::class,
         DisplayListener::class,
         ActionListener::class,
+        // todo: add custom action listener?
         TemplateManager::class,
     ];
 
@@ -33,21 +37,25 @@ final class App implements EventManagerAwareInterface
         private ServerRequestInterface $request,
         private EmitterInterface $emitter
     ) {
+        $this->event = new AppEvent();
+        $this->event->setTarget($this);
+        $this->event->setApp($this);
+        $this->event->setRequest($this->request);
     }
 
     public function run()
     {
-        $config = $this->serviceManager->get('config');
-        $this->bootstrap($config['listeners']);
+        $this->bootstrap($this->serviceManager->get('config')['listeners']);
         $this->dispatch($this->request);
     }
 
     private function dispatch(ServerRequestInterface $request, ?ResponseInterface $response = null)
     {
-        $argv = compact('request', 'response');
-        $results = $this->getEventManager()->triggerUntil(function($returnedResponse) {
+        $this->event->setName(AppEvents::Dispatch->value);
+        $this->event->setRequest($request);
+        $results = $this->getEventManager()->triggerEventUntil(function($returnedResponse) {
             return ($returnedResponse instanceof ResponseInterface);
-        }, __FUNCTION__, $this, $argv);
+        }, $this->event);
 
         if ($results->stopped()) {
             $this->emitter->emit($results->last());
@@ -60,17 +68,14 @@ final class App implements EventManagerAwareInterface
     {
         $eventManager = $this->getEventManager();
         $listeners    = array_unique(array_merge($this->defaultListeners, $listeners));
-        // lets setup and attach our default listeners
+        // lets setup and attach our default listeners and any mod listeners for authors savy enough to use the 'listeners' key
         foreach ($listeners as $listener) {
             $this->serviceManager->get($listener)->attach($eventManager);
         }
         // setup the bootstrap event in case any mods needs to get in on the action
-        $event = new AppEvent();
-        $event->setName(AppEvents::Bootstrap->value);
-        $event->setTarget($this);
-        $event->setApp($this);
-        $event->setRequest($this->request);
-        $eventManager->triggerEvent($event);
+        $this->event->setName(AppEvents::Bootstrap->value);
+        $this->event->stopPropagation(false);
+        $eventManager->triggerEvent($this->event);
 
         return $this;
     }

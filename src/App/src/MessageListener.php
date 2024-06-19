@@ -20,7 +20,7 @@ final class MessageListener extends AbstractListenerAggregate implements Dispatc
     {
         /** @var ServerRequest */
         $request = $event->getParam('request');
-        $params = $request->getQueryParams();
+        $params  = $request->getQueryParams();
         if (! empty($params['board']) && empty($params['topic'])) {
             return new HtmlResponse('<b>Render MessageIndex for board id = ' . $params['board'] . ' </b>');
         }
